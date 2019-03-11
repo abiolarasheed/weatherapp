@@ -1,4 +1,5 @@
 import json
+from typing import Dict, Any
 
 from rest_framework import serializers
 
@@ -11,5 +12,5 @@ class WeatherForecastSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
     @staticmethod
-    def get_data(obj):
+    def get_data(obj) -> Dict[Any, Any]:
         return json.loads(obj.data)

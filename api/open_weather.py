@@ -1,4 +1,6 @@
 from os import environ
+from typing import Dict
+
 from django.core.cache import cache
 from requests import Response
 import requests
@@ -9,9 +11,9 @@ class WeatherClient:
     A simple openweathermap.org Client
     """
 
-    base_url = "http://api.openweathermap.org/data/2.5/weather"
-    querystring = {}
-    headers = {}
+    base_url: str = "http://api.openweathermap.org/data/2.5/weather"
+    querystring: Dict[str, str] = {}
+    headers: Dict[str, str] = {}
 
     def __make_request(self) -> Response:
         """
