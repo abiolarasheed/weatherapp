@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals, absolute_import
+
 import django_filters
 from django_filters import DateTimeFromToRangeFilter
 from django_filters.widgets import RangeWidget

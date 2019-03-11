@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals, absolute_import
+
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.generics import ListAPIView
 
