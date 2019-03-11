@@ -1,0 +1,4 @@
+weatherapp
+===========
+A simple application with both front end and backend components for collecting, storing and displaying weather 
+information for London from the OpenWeatherMap API.
